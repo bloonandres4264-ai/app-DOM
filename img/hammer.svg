@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Hammer">
+  <rect width="128" height="128" rx="18" fill="#e2e8f0"/>
+  <g fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 26h42c8 0 14 6 14 14v14H44c-8 0-14-6-14-14V26Z" fill="#fbbf24"/>
+    <path d="M40 54h40v18c0 18-14 32-32 32H46c-10 0-18-8-18-18v-2c0-9 7-16 16-16h12Z" fill="#facc15"/>
+    <path d="M88 40l20 20"/>
+    <path d="M98 30l16 16"/>
+  </g>
+</svg>

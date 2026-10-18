@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="start-screen" class="start-screen">
+      <div class="start-card">
+        <div class="start-photo">
+          <img src="./img/Andres.png" alt="Retrato de Andres Elias Bloom" />
+        </div>
+        <h1>Creado por: Andres Elias Bloom</h1>
+        <button id="start-button" type="button">Start</button>
+      </div>
+    </div>
+
+    <div class="app-shell">
+      <header class="game-header">
+        <div class="brand-wrap">
+          <div>
+            <h2>Memory Match</h2>
+          </div>
+        </div>
+
+        <div class="stats-cluster">
+          <div class="stat-tile compact">
+            <span>Tiempo</span>
+            <strong id="timer">00:00</strong>
+          </div>
+          <div class="stat-tile compact">
+            <span>Pares</span>
+            <strong id="matches">0 / 6</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="memory-game" aria-label="Juego de memoria">
+        <div class="memory-card" data-framework="wrench">
+          <img class="front-face" src="./img/wrench.svg" alt="Llave inglesa" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+        <div class="memory-card" data-framework="wrench">
+          <img class="front-face" src="./img/wrench.svg" alt="Llave inglesa" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+
+        <div class="memory-card" data-framework="hammer">
+          <img class="front-face" src="./img/hammer.svg" alt="Martillo" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+        <div class="memory-card" data-framework="hammer">
+          <img class="front-face" src="./img/hammer.svg" alt="Martillo" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+
+        <div class="memory-card" data-framework="bolt">
+          <img class="front-face" src="./img/bolt.svg" alt="Tornillo" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+        <div class="memory-card" data-framework="bolt">
+          <img class="front-face" src="./img/bolt.svg" alt="Tornillo" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+
+        <div class="memory-card" data-framework="screwdriver">
+          <img class="front-face" src="./img/screwdriver.svg" alt="Destornillador" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+        <div class="memory-card" data-framework="screwdriver">
+          <img class="front-face" src="./img/screwdriver.svg" alt="Destornillador" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+
+        <div class="memory-card" data-framework="pliers">
+          <img class="front-face" src="./img/pliers.svg" alt="Alicates" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+        <div class="memory-card" data-framework="pliers">
+          <img class="front-face" src="./img/pliers.svg" alt="Alicates" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+
+        <div class="memory-card" data-framework="spark">
+          <img class="front-face" src="./img/spark.svg" alt="Spark" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+        <div class="memory-card" data-framework="spark">
+          <img class="front-face" src="./img/spark.svg" alt="Spark" />
+          <img class="back-face" src="./img/utility-badge.svg" alt="Carta oculta" />
+        </div>
+      </section>
+    </div>
+
+    <div id="finish-modal" class="finish-modal hidden" aria-live="polite">
+      <div class="modal-card">
+        <h2>¡Felicidades!</h2>
+        <p id="result-message">Has completado el juego.</p>
+        <button id="retry-button" type="button">Volver a jugar</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Wrench">
+  <rect width="128" height="128" rx="18" fill="#e2e8f0"/>
+  <g fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 90l16-16 18 18-16 16a12 12 0 0 1-17 0l-1-18Z" fill="#f59e0b"/>
+    <path d="M95 34a16 16 0 0 0-22 0l-8 8 22 22 8-8a16 16 0 0 0 0-22Z" fill="#f97316"/>
+    <path d="M28 100l-10 10"/>
+    <path d="M88 40l12-12"/>
+  </g>
+</svg>
