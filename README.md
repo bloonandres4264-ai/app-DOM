@@ -1,46 +1,46 @@
 # Memory Match — Utility Edition
 
-> Stop shipping slop. Start shipping a style.
+> Deja de entregar algo mediocre. Empieza a entregar estilo.
 
-A polished browser memory game built with vanilla HTML, CSS, and JavaScript. The project mixes a sleek dark UI with a playful card-matching mechanic and a compact set of utility-themed SVG illustrations.
+Un juego de memoria para navegador, desarrollado con HTML, CSS y JavaScript puro. El proyecto combina una interfaz oscura y elegante con una mecánica divertida de emparejar cartas y un conjunto compacto de ilustraciones SVG temáticas de herramientas.
 
-## Why this project
+## ¿Por qué este proyecto?
 
-This mini app was designed to practice DOM manipulation, state management, game logic, and visual polish without relying on frameworks. The result is a clean, card-based experience that feels more like a finished product than a basic tutorial exercise.
+Esta pequeña app fue diseñada para practicar manipulación del DOM, gestión del estado, lógica del juego y pulido visual sin depender de frameworks. El resultado es una experiencia limpia y tipo carta que se siente más acabada que un ejercicio básico de tutorial.
 
 ## Highlights
 
-- Flip-and-match gameplay with paired SVG cards
-- Countdown timer and win-state feedback
-- Retry/reset flow for replayability
-- Responsive layout with a premium, modern interface
-- Lightweight implementation with no dependencies
+- Juego de emparejar cartas con iconos SVG
+- Temporizador y feedback de victoria
+- Flujo de reinicio para repetir partidas
+- Diseño adaptable con una interfaz moderna y premium
+- Implementación ligera sin dependencias
 
-## Design direction
+## Dirección visual
 
-The visual language is inspired by the kind of clean, confident aesthetic promoted by Skills UI: warm dark surfaces, strong typography, compact spacing, and restrained but memorable accent color.
+La estética está inspirada en el tipo de diseño limpio y seguro promovido por Skills UI: superficies oscuras cálidas, tipografía fuerte, espaciado compacto y acentos memorables pero sobrios.
 
-## How to run
+## Cómo ejecutar
 
-1. Open the project folder in a browser.
-2. Load `index.html` directly, or run a local server:
+1. Abre la carpeta del proyecto en el navegador.
+2. Carga `index.html` directamente o ejecuta un servidor local:
 
 ```bash
 python -m http.server 8000
 ```
 
-3. Visit `http://localhost:8000` in your browser.
+3. Visita `http://localhost:8000` en tu navegador.
 
-## Game flow
+## Flujo del juego
 
-- Click two cards to reveal them.
-- Matching pairs stay face-up.
-- Non-matching pairs flip back after a short delay.
-- The timer runs while the first card is flipped.
-- When all pairs are found, a congratulations modal appears.
-- Use the retry button to start a fresh round.
+- Haz clic en dos cartas para revelarlas.
+- Las parejas coincidentes quedan visibles.
+- Las parejas incorrectas vuelven a girarse tras un breve retraso.
+- El temporizador empieza cuando se gira la primera carta.
+- Cuando encuentras todas las parejas aparece un modal de felicitación.
+- Usa el botón de repetir para iniciar una nueva ronda.
 
-## Project structure
+## Estructura del proyecto
 
 ```text
 app-DOM/
@@ -58,26 +58,26 @@ app-DOM/
 └── README.md
 ```
 
-## Skills / learning goals
+## Objetivos de aprendizaje
 
-- DOM selection and event listeners
-- State tracking for matched cards and turns
-- Conditional UI updates for win states
-- CSS 3D transforms for flip animations
-- Timer logic and game reset behavior
+- Selección del DOM y uso de eventos
+- Seguimiento del estado para cartas emparejadas y turnos
+- Actualización condicional de la interfaz al ganar
+- Transformaciones 3D en CSS para la animación de giro
+- Lógica del temporizador y reinicio del juego
 
-## Future ideas
+## Ideas futuras
 
-- Score and best-time system
-- Sound effects
-- Difficulty levels
-- Theme switching
-- Animated confetti on win
+- Sistema de puntuación y mejor tiempo
+- Efectos de sonido
+- Niveles de dificultad
+- Cambio de tema
+- Confetti animado al ganar
 
-## Credits
+## Créditos
 
-Game concept inspired by classic memory games, elevated with a more modern interface and utility-themed iconography.
+La idea del juego está inspirada en los clásicos juegos de memoria, pero elevada con una interfaz más moderna y una iconografía temática de herramientas.
 
 ---
 
-Built for fast experimentation, crisp UI polish, and learning by shipping.
+Hecho para experimentar rápido, pulir la UI y aprender creando.
