@@ -4,6 +4,8 @@ const matchesElement = document.getElementById('matches');
 const finishModal = document.getElementById('finish-modal');
 const resultMessage = document.getElementById('result-message');
 const retryButton = document.getElementById('retry-button');
+const startButton = document.getElementById('start-button');
+const startScreen = document.getElementById('start-screen');
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -46,16 +48,19 @@ function resetTimer() {
   timerElement.textContent = formatTime(secondsElapsed);
 }
 
+function startGame() {
+  if (gameStarted) return;
+
+  gameStarted = true;
+  startScreen.classList.add('hidden');
+  startTimer();
+}
+
 function flipCard() {
-  if (lockBoard) return;
+  if (!gameStarted || lockBoard) return;
   if (this === firstCard) return;
 
   this.classList.add('flip');
-
-  if (!gameStarted) {
-    gameStarted = true;
-    startTimer();
-  }
 
   if (!hasFlippedCard) {
     hasFlippedCard = true;
@@ -127,9 +132,11 @@ function retryGame() {
   resetBoard();
   resetTimer();
   updateMatchCounter();
+  startScreen.classList.remove('hidden');
   shuffleCards();
 }
 
+startButton.addEventListener('click', startGame);
 retryButton.addEventListener('click', retryGame);
 updateMatchCounter();
 shuffleCards();
