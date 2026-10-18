@@ -1,5 +1,6 @@
 const cards = Array.from(document.querySelectorAll('.memory-card'));
 const timerElement = document.getElementById('timer');
+const matchesElement = document.getElementById('matches');
 const finishModal = document.getElementById('finish-modal');
 const resultMessage = document.getElementById('result-message');
 const retryButton = document.getElementById('retry-button');
@@ -17,6 +18,10 @@ function formatTime(totalSeconds) {
   const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
   const seconds = String(totalSeconds % 60).padStart(2, '0');
   return `${minutes}:${seconds}`;
+}
+
+function updateMatchCounter() {
+  matchesElement.textContent = `${matchesFound} / ${cards.length / 2}`;
 }
 
 function startTimer() {
@@ -70,6 +75,8 @@ function checkForMatch() {
 
 function disableCards() {
   matchesFound += 1;
+  updateMatchCounter();
+
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
@@ -119,8 +126,10 @@ function retryGame() {
   gameStarted = false;
   resetBoard();
   resetTimer();
+  updateMatchCounter();
   shuffleCards();
 }
 
 retryButton.addEventListener('click', retryGame);
+updateMatchCounter();
 shuffleCards();
