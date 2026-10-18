@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Screwdriver">
+  <rect width="128" height="128" rx="18" fill="#e2e8f0"/>
+  <g fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 20 46 56l16 16 36-36-16-16Z" fill="#38bdf8"/>
+    <path d="M42 62 22 82l10 10 20-20"/>
+    <path d="M57 70 82 94"/>
+    <path d="M76 94h18v18H76z" fill="#0ea5e9"/>
+  </g>
+</svg>

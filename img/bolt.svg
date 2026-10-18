@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Bolt">
+  <rect width="128" height="128" rx="18" fill="#e2e8f0"/>
+  <path d="M70 12 32 68h22l-8 48 42-58H74l8-46Z" fill="#f59e0b" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+</svg>
